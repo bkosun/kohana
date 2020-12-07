@@ -17,6 +17,9 @@ before_install:
 install:
   - composer install
 
+before_script:
+  - export XDEBUG_MODE=coverage
+
 script:
   - vendor/bin/phpunit
 
